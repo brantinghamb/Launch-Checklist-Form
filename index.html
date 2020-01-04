@@ -8,7 +8,6 @@
     <body>
         <h1>Launch Checklist Form</h1>
         <div id="missionTarget">
-            <!-- Fetch some planetary data -->
         </div> 
         <div id="launchForm">
             <form>
@@ -25,16 +24,16 @@
                     <label>Cargo Mass (kg) <input type="text" name="cargoMass"/></label>
                 </div>
                 <button id="formSubmit">Submit</button>
-            </form>
+            </form>            
         </div>
         <div id="launchStatusCheck">
             <h2 id="launchStatus">Awaiting Information Before Launch</h2>
             <div  id="faultyItems">
                 <ol>
-                    <li id="pilotStatus">Pilot Ready</li>
-                    <li id="copilotStatus">Co-pilot Ready</li>
-                    <li id="fuelStatus">Fuel level high enough for launch</li>
-                    <li id="cargoStatus">Cargo mass low enough for launch</li>
+                    <li id="pilotStatus">Pilot ${pilotName.value} Ready</li>
+                    <li id="copilotStatus">Co-pilot ${copilotName.value} Ready</li>
+                    <li id="fuelStatus">There is enough fuel for the journey. </li>
+                    <li id="cargoStatus">Cargo is ready for take off.</li>
                 </ol>
             </div>
         </div>    
